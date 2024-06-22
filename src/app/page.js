@@ -37,7 +37,7 @@ export default function Home() {
   };
 
   return (
-    <main className="w-screen min-h-full px-32 relative flex flex-col">
+    <main className="w-screen min-h-full sm:px-10 px-6 md:px-12 xl:px-32 lg:px-20 relative flex flex-col">
       <Header />
       <Task
         data={todos}
