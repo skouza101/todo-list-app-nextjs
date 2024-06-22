@@ -8,11 +8,13 @@ const Item = ({ task, deleteTodo, updateTodo, updateTask }) => {
   return (
     <div>
       <div className="">
-        <div role="alert" className="alert">
-          <div className="stroke-info shrink-0 w-6 h-6">
-            <EastIcon />
+        <div className="flex w-full items-center justify-between px-2 alert">
+          <div className="flex  items-center gap-x-4">
+            <div className="stroke-info shrink-0 w-6 h-6">
+              <EastIcon />
+            </div>
+            <span>{task.task}</span>
           </div>
-          <span>{task.task}</span>
           <div className="flex gap-1">
             <div onClick={() => updateTask(task.id)}>
               <UpdateBtn updateTodo={updateTodo} updateTask={updateTask} />
@@ -28,3 +30,4 @@ const Item = ({ task, deleteTodo, updateTodo, updateTask }) => {
 };
 
 export default Item;
+
