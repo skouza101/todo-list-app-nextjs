@@ -12,6 +12,10 @@ export default function Home() {
   const createTodo = (todo) => {
     setTodo([...todos, { id: uuidv4(), task: todo, isEnding: false }]);
     console.log(todos);
+    window.scrollTo({
+       top: 0,
+       behavior: "smooth",
+     });
   };
 
   const deleteTodo = (id) => {
